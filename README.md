@@ -11,7 +11,7 @@ Video link coming soon...
   - Enemies become much faster as they draw closer to the bottom.
   - More enemies to destroy as the level increases.
   - Each level is different with diffent number and types of enemies.
-- Sound using DAC sampled at 11kHz (some sound were removed due to Keil's 32k limit on code space for the free version).
+- Sound output using DAC sampled at 11kHz (some sound were removed due to Keil's 32k limit on code space for the free version).
 - A button to shoot missiles and potentiometer to control the ship.
 
 ## Requirements
@@ -28,3 +28,21 @@ Video link coming soon...
 11. 1*R resistor DAC bit 3 on PB3 (most significant bit)
 12. LED on PB4
 13. LED on PB5
+
+## Notes
+- Want to add more levels, just change line 307 in SpaceInvaders.c
+  ```
+  #define MAX_STAGES 3
+  ```
+- Want to make the enemies faster, just change line 310 in SpaceInvaders.c
+  ```
+  #define STARTING_SPEED 1
+  ```
+- Have a different sized Nokia LCD display, just change line 58, 59, 61, and 62 in VirtualNokia5110.h
+  ```
+  #define MAX_X                   84
+  #define MAX_Y                   48
+  // *************************** Screen dimensions ***************************
+  #define SCREENW     84
+  #define SCREENH     48
+  ```
