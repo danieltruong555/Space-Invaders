@@ -1,10 +1,10 @@
 # Space-Invaders
 A system that can play Space Invaders
 
-##Video
+## Video
 Video link coming soon...
 
-##Features
+## Features
 - Faithful copy of the the 1978 arcade game Space Invaders.
   - Player loses when player runs out of lives or the enemy has reached the bottom.
   - Player wins when player beats every level by destroying all the enemies.
@@ -14,7 +14,7 @@ Video link coming soon...
 - Sound using DAC sampled at 11kHz (some sound were removed due to Keil's 32k limit on code space for the free version).
 - A button to shoot missiles and potentiometer to control the ship.
 
-##Requirements
+## Requirements
 1. TM4C123 Launchpad
 2. PA1, PA0 UART0 connected to PC through USB cable
 3. Slide pot pin 1 connected to ground
